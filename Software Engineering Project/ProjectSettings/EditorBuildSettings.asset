@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: f574b35ffc00ff14eb9536bc9849ba75
   - enabled: 1
-    path: Assets/Scenes/DiceRoller.unity
+    path: Assets/Scenes/Main.unity
     guid: 5c836ec1e67ccf54b90d40d7360e06b5
   - enabled: 0
     path: 
