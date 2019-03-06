@@ -10,7 +10,7 @@ namespace dice_roller
     {
         static void Main(string[] args)
         {
-            string inputString = "3d6+2d4+8" + " ";
+            string inputString = "3d6+2d4-8" + " ";
             string newString = "";
             int newRollTotal = 0;
 
@@ -49,13 +49,20 @@ namespace dice_roller
                             valueOfDice = userEnteredArray.ElementAt(i + 1).ToString();
                             for (int j = 0; j < diceRolls; j++)
                             {
-                                newParsedString += "d" + valueOfDice + "+";
+                                newParsedString += "d" + valueOfDice;
                             }
                             break;
                         case '+':
+                            newParsedString += "+";
+                            break;
                         case '-':
+                            newParsedString += "-";
+                            break;
                         case '*':
+                            newParsedString += "*";
+                            break;
                         case '/':
+                            newParsedString += "-";
                             break;
                         default:
                             if (userEnteredArray.ElementAt(i - 1).Equals('d'))
@@ -100,8 +107,18 @@ namespace dice_roller
                         else
                             bonus = newParsedString.ElementAt(i).ToString();
                             Int32.TryParse(bonus, out bonusNum);
-                            diceRollTotal += bonusNum;
-                        break;
+                            if (newParsedString.ElementAt(i - 1).Equals('+'))
+                                diceRollTotal += bonusNum;
+                            else if (newParsedString.ElementAt(i - 1).Equals('-'))
+                            {
+                                diceRollTotal -= bonusNum;
+                                Console.WriteLine("here");
+                            }
+                            else if (newParsedString.ElementAt(i - 1).Equals('*'))
+                                diceRollTotal *= bonusNum;
+                            else
+                                diceRollTotal /= bonusNum;
+                            break;
                 }
             }
 
