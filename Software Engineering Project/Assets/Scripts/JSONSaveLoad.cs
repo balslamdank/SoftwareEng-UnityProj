@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using SimpleJSON;
+using UnityEngine.UI;
 
 public class JSONSaveLoad : MonoBehaviour
-{	
+{	public InputField InputFieldMyVal;
+
 	public string campaignName;
 	public string playerRole;
 	public string playerRace;
@@ -32,7 +34,7 @@ public class JSONSaveLoad : MonoBehaviour
 		Debug.Log(charInfo.ToString());
 
 		//string path = Application.persistentDataPath + "/PlayerSave.json";
-		string path = "C:/Users/Balsam/Documents/databaseproj/SoftwareEng-UnityProj/Software Engineering Project" + "/PlayerSave.json";
+		string path = Application.persistentDataPath + "/PlayerSave.json";
 
 		File.WriteAllText(path, charInfo.ToString());
 	}
@@ -41,7 +43,7 @@ public class JSONSaveLoad : MonoBehaviour
 	void Load()
 	{
 		//string path = Application.persistentDataPath + "/PlayerSave.json";
-		string path = "C:/Users/Balsam/Documents/databaseproj/SoftwareEng-UnityProj/Software Engineering Project" + "/PlayerSave.json";
+		string path = Application.persistentDataPath + "/PlayerSave.json";
 
 		string jsonString = File.ReadAllText(path);
 		JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
@@ -52,6 +54,7 @@ public class JSONSaveLoad : MonoBehaviour
 		playerClass = charJson["Class"];
 		itemsList = charJson["Items"];
 		spellList = charJson["Spells"];
+		InputFieldMyVal.text = charJson["Campaign Name"];
 
 	}
     // Start is called before the first frame update

@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class menuController : MonoBehaviour
 {
+    public string str;
 
     public void GoToGame()
     {
-        SceneManager.LoadScene("DiceRoller");
+        SceneManager.LoadScene(str);
     }
 }
