@@ -4,74 +4,102 @@ using UnityEngine;
 using System.IO;
 using SimpleJSON;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class JSONSaveLoad : MonoBehaviour
-{	public InputField InputFieldMyVal;
+{	public InputField campaignName;
 
-	public string campaignName;
-	public string playerRole;
-	public string playerRace;
-	public string playerClass;
-	public string items;
-	public string spells;
 	
-	public string itemsList;
-	public string spellList;
+	public InputField playerTitle;
+	public InputField playerRace;
+	public InputField playerClass;
+	public InputField level;
+	public InputField HP;
+	public string numb;
+	
+
 	
 	// Save updated data to JSON file
-	void Save() 
-	{
+	void Save(string filenumb) 
+	{  
 		JSONObject charInfo = new JSONObject();
-		charInfo.Add("Campaign Name", campaignName);
-		charInfo.Add("Title", playerRole);
-		charInfo.Add("Race", playerRace);
-		charInfo.Add("Class", playerClass);
+		charInfo.Add("Campaign Name", campaignName.text);
+		charInfo.Add("Title", playerTitle.text);
+		charInfo.Add("Race", playerRace.text);
+		charInfo.Add("Class", playerClass.text);
 		
 
-		charInfo.Add("Items", itemsList);
-		charInfo.Add("Spells", spellList);
+		charInfo.Add("Level", level.text);
+		charInfo.Add("HP", HP.text);
 
 		Debug.Log(charInfo.ToString());
 
-		//string path = Application.persistentDataPath + "/PlayerSave.json";
-		string path = Application.persistentDataPath + "/PlayerSave.json";
+		string path = Application.persistentDataPath + "/PlayerSave" + filenumb + ".json";
 
 		File.WriteAllText(path, charInfo.ToString());
 	}
 
 	// Load data to game
-	void Load()
+	public string readN()
 	{
-		//string path = Application.persistentDataPath + "/PlayerSave.json";
-		string path = Application.persistentDataPath + "/PlayerSave.json";
+			string pathB = Application.persistentDataPath + "/jsonUtility.json";
+			string jsonString = File.ReadAllText(pathB);
+			JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
+			numb = charJson["ButtonID"];
+			return numb;
+	}
+
+	void Load(string filenumb)
+	{	
+		string path = Application.persistentDataPath + "/PlayerSave" + filenumb + ".json";
 
 		string jsonString = File.ReadAllText(path);
 		JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
 
-		campaignName = charJson["Campaign Name"];
-		playerRole = charJson["Title"];
-		playerRace = charJson["Race"];
-		playerClass = charJson["Class"];
-		itemsList = charJson["Items"];
-		spellList = charJson["Spells"];
-		InputFieldMyVal.text = charJson["Campaign Name"];
+		campaignName.text = charJson["Campaign Name"];
+		playerTitle.text = charJson["Title"];
+		playerRace.text = charJson["Race"];
+		playerClass.text = charJson["Class"];
+		level.text = charJson["Level"];
+		HP.text = charJson["HP"];
 
 	}
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Application.persistentDataPath);
+        if(SceneManager.GetActiveScene().name == "Main"){
+			string numb = readN();
+			Load(numb);
+		}
     }
 
+	void clearAll()
+	
+	{
+
+		playerTitle.text = "";
+		campaignName.text = "";
+		playerTitle.text = "";
+		playerRace.text = "";
+		playerClass.text = "";
+		level.text = "";
+		HP.text = "";
+
+	
+		
+	}
     // Update is called once per frame
     public void getSelection(string mySelection)
-    {
+    {	string selectnumb = readN();
         if(mySelection == "save"){ 
-		Save();
+		Save(selectnumb);
 		Debug.Log("Working Save");
 		}
 		if(mySelection == "load"){
-		Load();
+		Load(selectnumb);
 		Debug.Log("Working Load");}
+		if(mySelection == "clear"){
+		clearAll();
+		}
     }
 }
