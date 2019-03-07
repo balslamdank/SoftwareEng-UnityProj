@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 813412475600759809}
   - component: {fileID: 8285731654114893971}
   m_Layer: 5
-  m_Name: Quote4
+  m_Name: Quote10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,6 +78,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u201CThere is nothing like looking, if you want to find something. You
-    certainly usually find something, if you look, but it is not always quite the
-    something you were after.\u201D "
+  m_Text: '"One should always play fairly when one has the winning cards."'
