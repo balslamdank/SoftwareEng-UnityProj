@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using dice_roller;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class calculator : MonoBehaviour
@@ -10,14 +11,16 @@ public class calculator : MonoBehaviour
 
     public InputField field;
 
-    Text newText;
+    private dice_roller.roller roll = new dice_roller.roller();
+
+    public roller Roll { get => roll; set => roll = value; }
 
     void Start()
     {
         //Tells what each button puts into the input field/debug.log
         //Having trouble getting it to simply input the Text object associated with the button
         //Ideally want to pass the text object to input. Need to do some more work on this
-        //Still missing the Backspace button. Everything else inputs correctly
+        //Still missing the Backspace and Enter button. Everything else inputs correctly
         m_ButtonZero.onClick.AddListener(delegate { TaskWithParameters(field.text += "0"); });
         m_ButtonOne.onClick.AddListener(delegate { TaskWithParameters(field.text += "1"); });
         m_ButtonTwo.onClick.AddListener(delegate { TaskWithParameters(field.text += "2"); });
@@ -34,14 +37,12 @@ public class calculator : MonoBehaviour
         m_ButtonDiv.onClick.AddListener(delegate { TaskWithParameters(field.text += "/"); });
         m_ButtonD.onClick.AddListener(delegate { TaskWithParameters(field.text += "d"); });
         m_ButtonClear.onClick.AddListener(delegate { TaskWithParameters(field.text = ""); });
-        
+
     }
 
     void TaskOnClick()
     {
         //Output this to console
-        newText = transform.FindChild("Text").GetComponent<Text>();
-        field.text += newText;
         Debug.Log("You have clicked the button!");
     }
 
@@ -56,5 +57,15 @@ public class calculator : MonoBehaviour
         //Output this to console
         
         Debug.Log("Button clicked = " + buttonNo);
+    }
+
+    public void NewRoll(InputField input)
+    {
+        int output;
+        string inputString = input.text;
+        output = Roll.Work(inputString);
+        inputString = output.ToString();
+        field.text = inputString;
+
     }
 }
