@@ -8,17 +8,21 @@ using UnityEngine;
 // "music" tag is the BackgroundMusic GameObject. The AudioSource has the
 // audio attached to the AudioClip.
 
-public class KeepWithSceneChange : MonoBehaviour
-{
-    void Awake()
-    {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
+public class MyUnitySingleton : MonoBehaviour {
 
-        if (objs.Length > 1)
-        {
-            Destroy(this.gameObject);
-        }
 
-        DontDestroyOnLoad(this.gameObject);
-    }
+ private static MyUnitySingleton instance = null;
+ public static MyUnitySingleton Instance {
+     get { return instance; }
+ }
+ void Awake() {
+     if (instance != null && instance != this) {
+         Destroy(this.gameObject);
+         return;
+     } else {
+         instance = this;
+     }
+     DontDestroyOnLoad(this.gameObject);
+ }
+
 }
