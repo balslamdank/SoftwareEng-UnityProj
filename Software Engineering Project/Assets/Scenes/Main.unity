@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 18765934}
   - component: {fileID: 18765933}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Do
+  m_Text: Dice Roller Options
 --- !u!222 &18765934
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -269,7 +269,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 52189201}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 650716058}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &52189201
@@ -716,7 +727,7 @@ GameObject:
   - component: {fileID: 345238866}
   - component: {fileID: 345238865}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,7 +785,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Of
+  m_Text: Options
 --- !u!222 &345238866
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1019,7 +1030,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 397940549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 650716058}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &397940549
@@ -1148,8 +1170,6 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
   m_GameObject: {fileID: 398122629}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1314,18 +1334,13 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
->>>>>>> general_not_master
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425152901}
   - component: {fileID: 425152903}
   - component: {fileID: 425152902}
   m_Layer: 5
-<<<<<<< HEAD
-  m_Name: Text
-=======
   m_Name: unique
->>>>>>> general_not_master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1383,7 +1398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: To
+  m_Text: Dice Roller Options
 --- !u!222 &425152903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1670,7 +1685,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 475970563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 650716058}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &475970563
@@ -1804,10 +1830,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-<<<<<<< HEAD
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-=======
       m_Calls:
       - m_Target: {fileID: 1596998558}
         m_MethodName: 
@@ -1821,7 +1843,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
->>>>>>> general_not_master
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
@@ -2087,7 +2108,7 @@ GameObject:
   - component: {fileID: 554091194}
   - component: {fileID: 554091193}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2145,7 +2166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buttons!!!!!!
+  m_Text: Options
 --- !u!222 &554091194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2245,7 +2266,7 @@ GameObject:
   - component: {fileID: 641515244}
   - component: {fileID: 641515243}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2303,7 +2324,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: All
+  m_Text: Options
 --- !u!222 &641515244
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2390,7 +2411,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641817066}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1898862384}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &641817066
@@ -2439,6 +2471,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 650716056}
+  - component: {fileID: 650716057}
+  - component: {fileID: 650716058}
   m_Layer: 0
   m_Name: DiceRollerButtonGroup
   m_TagString: Untagged
@@ -2470,6 +2504,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0.047087, y: 150.7}
   m_SizeDelta: {x: 100.07, y: 112.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &650716057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650716055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7a40dceaa393e4d85a71f33e401b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuReference: {fileID: 1560913653}
+--- !u!114 &650716058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650716055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da873b67619d304fb38e8ec0a2c4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  str: DiceRoller
 --- !u!1 &657331122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,6 +2542,7 @@ GameObject:
   - component: {fileID: 657331126}
   - component: {fileID: 657331125}
   - component: {fileID: 657331124}
+  - component: {fileID: 657331127}
   m_Layer: 5
   m_Name: DiceRoller
   m_TagString: Untagged
@@ -2548,40 +2609,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 657331125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1560913653}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1898862381}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 650716055}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &657331125
@@ -2621,9 +2649,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657331122}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
---- !u!1 &771925757
-=======
 --- !u!114 &657331127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2640,7 +2665,6 @@ MonoBehaviour:
   groupReference: {fileID: 1898862381}
   groupReference2: {fileID: 650716055}
 --- !u!1 &698406687
->>>>>>> general_not_master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2648,16 +2672,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 771925758}
-  - component: {fileID: 771925761}
-  - component: {fileID: 771925760}
-  - component: {fileID: 771925759}
-=======
   - component: {fileID: 698406688}
   - component: {fileID: 698406690}
   - component: {fileID: 698406689}
->>>>>>> general_not_master
   m_Layer: 5
   m_Name: Placeholder
   m_TagString: Untagged
@@ -2702,9 +2719,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-=======
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
@@ -2836,7 +2850,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
->>>>>>> general_not_master
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
@@ -2882,11 +2895,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716853142}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
---- !u!1 &779342088
-=======
 --- !u!1 &771925757
->>>>>>> general_not_master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2965,9 +2974,6 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 771925760}
   m_OnClick:
     m_PersistentCalls:
-<<<<<<< HEAD
-      m_Calls: []
-=======
       m_Calls:
       - m_Target: {fileID: 771925762}
         m_MethodName: GoToGame
@@ -2980,7 +2986,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
->>>>>>> general_not_master
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &771925760
@@ -3190,7 +3195,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 779342091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1898862384}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &779342091
@@ -3243,11 +3259,7 @@ GameObject:
   - component: {fileID: 803283420}
   - component: {fileID: 803283422}
   m_Layer: 5
-<<<<<<< HEAD
-  m_Name: Text
-=======
   m_Name: Menu
->>>>>>> general_not_master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3298,23 +3310,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-<<<<<<< HEAD
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: ab3d62fd05a529946ba84c6631cde16a, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Yay
---- !u!222 &919769842
-=======
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -3325,7 +3320,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
 --- !u!222 &803283421
->>>>>>> general_not_master
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3333,48 +3327,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803283418}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
---- !u!1 &987421312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 987421313}
-  - component: {fileID: 987421315}
-  - component: {fileID: 987421314}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &987421313
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987421312}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 475970561}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &987421314
-=======
 --- !u!114 &803283422
->>>>>>> general_not_master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3386,39 +3339,6 @@ MonoBehaviour:
   m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: ab3d62fd05a529946ba84c6631cde16a, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Cool
---- !u!222 &987421315
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987421312}
-  m_CullTransparentMesh: 0
---- !u!1 &1016740353
-=======
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -3431,7 +3351,6 @@ CanvasRenderer:
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
 --- !u!1 &804971190
->>>>>>> general_not_master
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3509,9 +3428,6 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 804971193}
   m_OnClick:
     m_PersistentCalls:
-<<<<<<< HEAD
-      m_Calls: []
-=======
       m_Calls:
       - m_Target: {fileID: 1898862384}
         m_MethodName: GoToGame
@@ -3524,7 +3440,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
->>>>>>> general_not_master
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &804971193
@@ -3655,7 +3570,7 @@ GameObject:
   - component: {fileID: 919769842}
   - component: {fileID: 919769841}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5197,23 +5112,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-<<<<<<< HEAD
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: ab3d62fd05a529946ba84c6631cde16a, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: The
---- !u!222 &1253814264
-=======
   m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -5224,7 +5122,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
 --- !u!222 &1404015332
->>>>>>> general_not_master
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5240,18 +5137,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 1286335316}
-  - component: {fileID: 1286335319}
-  - component: {fileID: 1286335318}
-  - component: {fileID: 1286335317}
-=======
   - component: {fileID: 1448914626}
   - component: {fileID: 1448914630}
   - component: {fileID: 1448914629}
   - component: {fileID: 1448914628}
   - component: {fileID: 1448914627}
->>>>>>> general_not_master
   m_Layer: 5
   m_Name: SaveButton
   m_TagString: Untagged
@@ -5331,51 +5221,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-<<<<<<< HEAD
-      - m_Target: {fileID: 1560913653}
-        m_MethodName: SetActive
-        m_Mode: 6
-=======
       - m_Target: {fileID: 1596998562}
         m_MethodName: getSelection
         m_Mode: 5
->>>>>>> general_not_master
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-<<<<<<< HEAD
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 650716055}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1898862381}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-=======
           m_StringArgument: save
           m_BoolArgument: 0
         m_CallState: 2
->>>>>>> general_not_master
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1448914629
@@ -5415,8 +5271,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448914625}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1529314199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5496,7 +5350,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529314199}
   m_CullTransparentMesh: 0
->>>>>>> general_not_master
 --- !u!1 &1533815474
 GameObject:
   m_ObjectHideFlags: 0
@@ -5575,7 +5428,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1533815477}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 650716058}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1533815477
@@ -5873,6 +5737,7 @@ GameObject:
   - component: {fileID: 1786895319}
   - component: {fileID: 1786895318}
   - component: {fileID: 1786895317}
+  - component: {fileID: 1786895320}
   m_Layer: 5
   m_Name: Items
   m_TagString: Untagged
@@ -5939,7 +5804,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1786895318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1786895320}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1786895318
@@ -5979,6 +5855,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786895315}
   m_CullTransparentMesh: 0
+--- !u!114 &1786895320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786895315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da873b67619d304fb38e8ec0a2c4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  str: Items
 --- !u!1 &1818207123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,7 +6101,7 @@ GameObject:
   - component: {fileID: 1836548917}
   - component: {fileID: 1836548916}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6270,7 +6159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buttons
+  m_Text: Dice Roller Options
 --- !u!222 &1836548917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6288,13 +6177,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898862382}
+  - component: {fileID: 1898862383}
+  - component: {fileID: 1898862384}
   m_Layer: 0
   m_Name: ReferenceTablesButtonGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1898862382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6319,6 +6210,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0.047073364, y: 150.70001}
   m_SizeDelta: {x: 100.07, y: 112.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1898862383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898862381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa7a40dceaa393e4d85a71f33e401b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuReference: {fileID: 1560913653}
+--- !u!114 &1898862384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898862381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da873b67619d304fb38e8ec0a2c4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  str: ReferenceTable
 --- !u!1 &1933165972
 GameObject:
   m_ObjectHideFlags: 0
@@ -6397,7 +6314,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1933165975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1898862384}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1933165975
@@ -6449,7 +6377,7 @@ GameObject:
   - component: {fileID: 1980968150}
   - component: {fileID: 1980968149}
   m_Layer: 5
-  m_Name: Text
+  m_Name: unique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6507,7 +6435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Things
+  m_Text: Dice Roller Options
 --- !u!222 &1980968150
 CanvasRenderer:
   m_ObjectHideFlags: 0
