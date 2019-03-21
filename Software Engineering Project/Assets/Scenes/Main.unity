@@ -1842,6 +1842,7 @@ GameObject:
   - component: {fileID: 657331125}
   - component: {fileID: 657331124}
   - component: {fileID: 657331127}
+  - component: {fileID: 657331128}
   m_Layer: 5
   m_Name: DiceRoller
   m_TagString: Untagged
@@ -1908,7 +1909,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 657331125}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657331128}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DiceRoller
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &657331125
@@ -1963,6 +1975,19 @@ MonoBehaviour:
   menuReference: {fileID: 1560913653}
   groupReference: {fileID: 1898862381}
   groupReference2: {fileID: 650716055}
+--- !u!114 &657331128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657331122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da873b67619d304fb38e8ec0a2c4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  str: DiceRoller
 --- !u!1 &771925757
 GameObject:
   m_ObjectHideFlags: 0
