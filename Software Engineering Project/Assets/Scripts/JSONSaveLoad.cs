@@ -34,7 +34,7 @@ public class JSONSaveLoad : MonoBehaviour
 
 		Debug.Log(charInfo.ToString());
 
-		string path = Application.persistentDataPath + "/PlayerSave" + filenumb + ".json";
+		string path = Application.dataPath + "/PlayerSave" + filenumb + ".json";
 
 		File.WriteAllText(path, charInfo.ToString());
 	}
@@ -42,7 +42,7 @@ public class JSONSaveLoad : MonoBehaviour
 	// Load data to game
 	public string readN()
 	{
-			string pathB = Application.persistentDataPath + "/jsonUtility.json";
+			string pathB = Application.dataPath + "/jsonUtility.json";
 			string jsonString = File.ReadAllText(pathB);
 			JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
 			numb = charJson["ButtonID"];
@@ -51,7 +51,7 @@ public class JSONSaveLoad : MonoBehaviour
 
 	void Load(string filenumb)
 	{	
-		string path = Application.persistentDataPath + "/PlayerSave" + filenumb + ".json";
+		string path = Application.dataPath + "/PlayerSave" + filenumb + ".json";
 
 		string jsonString = File.ReadAllText(path);
 		JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
@@ -67,6 +67,8 @@ public class JSONSaveLoad : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		Debug.Log("Path : " + Application.dataPath);
+
         if(SceneManager.GetActiveScene().name == "Main"){
 			string numb = readN();
 			Load(numb);

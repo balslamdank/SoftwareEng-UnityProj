@@ -13,7 +13,7 @@ public class SetToJSONUtil : MonoBehaviour
 
 	public void findN()
 	{	string tagNumb;
-		string path = Application.persistentDataPath + "/jsonUtility.json";
+		string path = Application.dataPath + "/jsonUtility.json";
 		tagNumb = gameObject.tag;
 		buttID.Add("ButtonID", tagNumb);
 		File.WriteAllText(path, buttID.ToString());

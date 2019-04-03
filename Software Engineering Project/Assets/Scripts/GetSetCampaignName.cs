@@ -13,10 +13,12 @@ public class GetSetCampaignName : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   Debug.Log("Path : " + Application.dataPath);
 		campaignNumber = gameObject.tag;
 		campaignText = GetComponent<Text>();
-		string path = Application.persistentDataPath + "/PlayerSave" + campaignNumber + ".json";
+		string path = Application.dataPath + "/PlayerSave" + campaignNumber + ".json";
+		
+
 		string jsonString = File.ReadAllText(path);
 		JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
 
