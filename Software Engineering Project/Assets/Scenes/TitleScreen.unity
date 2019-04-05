@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 296043104}
   m_Layer: 5
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,7 +904,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 296043101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de66c17292f13bd4fb415b50ffed9917, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ba9e3dc30088a24ebdafd3ebb78cbb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &296392939
@@ -1336,8 +1336,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.6, y: -4.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1309325515}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2799,6 +2798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107791164}
   - component: {fileID: 1107791165}
+  - component: {fileID: 1107791166}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -2869,9 +2869,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296043103}
-        m_MethodName: set_mute
-        m_Mode: 0
+      - m_Target: {fileID: 1107791166}
+        m_MethodName: MuteDaMusic
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2894,6 +2894,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1107791166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107791163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8922cfd53b3a0ae46b250e9e465ab7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1121708193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,8 +3623,8 @@ RectTransform:
   - {fileID: 1610256831}
   - {fileID: 107416433}
   - {fileID: 1107791164}
-  m_Father: {fileID: 519420032}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
