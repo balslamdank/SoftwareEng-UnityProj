@@ -15,12 +15,12 @@ public class VolumeValueChange : MonoBehaviour {
 	void Start () {
 
         // Assign Audio Source component to control it
-        audioSrc = GetComponent<AudioSource>();
+        audioSrc = GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+        audioSrc = GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>();
         // Setting volume option of Audio Source to be equal to musicVolume
         audioSrc.volume = musicVolume;
 	}
