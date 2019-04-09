@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class VolumeValueChange : MonoBehaviour {
 
@@ -15,12 +13,12 @@ public class VolumeValueChange : MonoBehaviour {
 	void Start () {
 
         // Assign Audio Source component to control it
-        audioSrc = GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        audioSrc = GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>();
+
         // Setting volume option of Audio Source to be equal to musicVolume
         audioSrc.volume = musicVolume;
 	}

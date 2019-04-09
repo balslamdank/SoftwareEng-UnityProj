@@ -22,7 +22,7 @@ public class GetSetCampaignName : MonoBehaviour
 		string jsonString = File.ReadAllText(path);
 		JSONObject charJson = (JSONObject)JSON.Parse(jsonString);
 
-		fileCampaignName = charJson["Campaign Name"];
+		fileCampaignName = charJson["Character Name"];
 
 		if(fileCampaignName == "")
 		{

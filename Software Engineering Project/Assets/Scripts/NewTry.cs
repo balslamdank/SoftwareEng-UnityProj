@@ -11,5 +11,11 @@ public class NewTry : MonoBehaviour
             Destroy(this.gameObject);
 
         DontDestroyOnLoad(this.gameObject);
+
+		
+		 GameObject toggleobj = GameObject.FindGameObjectWithTag("toggle");
+		 DontDestroyOnLoad (this.gameObject);
+
+	
     }
 }
