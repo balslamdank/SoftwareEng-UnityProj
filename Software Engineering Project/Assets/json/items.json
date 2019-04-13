@@ -1,0 +1,37 @@
+{
+  "Padded Armor": {
+    "content": [
+      "cost: 5 gp",
+      "AC: 11 + dex modifier",
+      "Strength: -",
+      "Stealth: Disadvantage",
+      "Weight: 8 lb"
+    ]
+  },
+  "Leather Armor": {
+    "content": [
+      "cost: 10 gp",
+      "AC: 11 + dex modifier",
+      "Strength: -",
+      "Stealth: -",
+      "Weight: 10 lb"
+    ]
+  },
+  "Studded Leather Armor": {
+    "content": [
+      "cost: 45 gp",
+      "AC: 12 + dex modifier",
+      "Strength: -",
+      "Stealth: -",
+      "Weight: 13 lb"
+    ]
+  },
+  "Shortsword": {
+    "content": [
+      "cost: 10 gp",
+      "Damage: 1d6 piercing",
+      "weight: 2 lb",
+      "Properties: Finesse, light",
+    ]
+  }
+}
