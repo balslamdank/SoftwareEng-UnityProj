@@ -10,16 +10,19 @@ using UnityEngine.EventSystems;
 public class Hoo_boy : MonoBehaviour
 {	
 	public GameObject statsPanel;
-
+	public GameObject[] panelobjs;
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
-			RectTransform theRectTransform;
- 
-			theRectTransform = transform as RectTransform; // Cast it to RectTransform
-			theRectTransform.SetAsLastSibling(); // Make the panel show on top.
-			//transform.SetAsLastSibling ();
+			
+			
+			
+			foreach(GameObject panelobj in panelobjs) {
+				Debug.Log("Tagged Obejcts:" + gameObject.name);
+				}
 
+			
+			
 			statsPanel.gameObject.SetActive(!statsPanel.gameObject.activeSelf);
 		}
 	}

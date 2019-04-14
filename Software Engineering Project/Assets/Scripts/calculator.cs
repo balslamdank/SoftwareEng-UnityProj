@@ -15,6 +15,8 @@ public class calculator : MonoBehaviour
 
     public roller Roll { get => roll; set => roll = value; }
 
+    //Rotate test = new Rotate;
+
     void Start()
     {
         //Tells what each button puts into the input field/debug.log

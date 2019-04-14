@@ -16,6 +16,7 @@ TagManager:
   - sheetField
   - toggleField
   - audioMenu
+  - panelFoSho
   layers:
   - Default
   - TransparentFX
