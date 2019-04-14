@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SimpleJSON;
+using System.IO;
 
 public class Searching : MonoBehaviour
 {
-    private IEnumerator coroutine;
+    /*private IEnumerator coroutine;
     private bool isRunning = false;
 	[SerializeField] string fileSearchName;
     public void FireOffSearch()
@@ -32,19 +33,15 @@ public class Searching : MonoBehaviour
 		string jsonSearchString = File.ReadAllText(path);
 		JSONObject searchJSON = (JSONObject)JSON.Parse(jsonSearchString);
 
-		string[] searchResults = searchJSON[search];
-
-		foreach( string query in searchJSON)
+		foreach( JSONObject jim in searchJSON)
 		{
-			if (query.contains(search))
-			{
-				//Return JSON array 
-			}
+            string someObject = jim.ToString();//get da key;
 		}
 
-	
+	    
 
         //Search through (list? JSON file?)
-
+        
     }
+    */
 }
