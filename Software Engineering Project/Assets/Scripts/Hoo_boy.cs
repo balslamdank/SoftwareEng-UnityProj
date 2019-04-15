@@ -24,6 +24,7 @@ public class Hoo_boy : MonoBehaviour
 			
 			
 			statsPanel.gameObject.SetActive(!statsPanel.gameObject.activeSelf);
+           
 		}
 	}
 }

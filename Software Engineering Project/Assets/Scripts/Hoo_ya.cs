@@ -23,6 +23,7 @@ public class Hoo_ya : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Tab))
             {
                 statsPanel.gameObject.SetActive(!statsPanel.gameObject.activeSelf);
+               
             }
         }
 
