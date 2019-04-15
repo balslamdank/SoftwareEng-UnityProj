@@ -11,6 +11,7 @@ public class Hoo_boy : MonoBehaviour
 {	
 	public GameObject statsPanel;
 	public GameObject[] panelobjs;
+    
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
