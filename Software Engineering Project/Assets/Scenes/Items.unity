@@ -1494,6 +1494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileSearchName: 
+  buttons: {fileID: 2024408154}
 --- !u!1 &1060671841
 GameObject:
   m_ObjectHideFlags: 0
