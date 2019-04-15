@@ -17,6 +17,7 @@ TagManager:
   - toggleField
   - audioMenu
   - panelFoSho
+  - searchDropDown
   layers:
   - Default
   - TransparentFX
