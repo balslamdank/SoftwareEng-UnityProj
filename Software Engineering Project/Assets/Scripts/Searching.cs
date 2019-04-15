@@ -51,8 +51,16 @@ public class Searching : MonoBehaviour
 
         foreach(Transform child in buttons.transform)
         {
-            child.GetChild(0).GetComponent<Text>().text = myList[i][0];
-            i++;
+            if (i < myList.Count)
+            {
+                child.GetChild(0).GetComponent<Text>().text = myList[i][0];
+                i++;
+            }
+
+            else
+            {
+                child.GetChild(0).GetComponent<Text>().text = "";
+            }
         }
 
         yield return null;
