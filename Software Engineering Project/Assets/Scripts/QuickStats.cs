@@ -31,11 +31,9 @@ public class QuickStats : MonoBehaviour
 
 	void Update()
     {
-		
+        string numb = jsonRead.readN();
+        getCurrStats(numb);
 
-        if(SceneManager.GetActiveScene().name == "Main"){
-			string numb = jsonRead.readN();
-			getCurrStats(numb);
-		}
+        
     }
 }
