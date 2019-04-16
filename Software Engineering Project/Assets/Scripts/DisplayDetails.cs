@@ -50,8 +50,10 @@ public class DisplayDetails : MonoBehaviour
             {
                 Debug.Log(pair.Key);
                 Debug.Log("Content Info:" + pair.Value.ToString());
-                contentDetails.text = pair.Value.ToString();
-        
+                string resultingText = pair.Value.ToString();
+                resultingText = resultingText.Replace("{", "");
+                resultingText = resultingText.Replace("}", "");
+                contentDetails.text = resultingText;
                 
 
          
