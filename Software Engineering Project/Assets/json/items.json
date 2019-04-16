@@ -33,5 +33,281 @@
       "weight: 2 lb",
       "Properties: Finesse, light",
     ]
+  },
+  "Medium Armor": {
+    "content": [
+       "cost: 10 gp",
+       "AC: 12 + Dex modifier",
+       "Strength: -",
+       "Stealth: -",
+       "Weight: 12 lb"
+      ]
+    },
+  "Heavy Armor": {
+    "content": [
+      "cost: 30 gp",
+      "AC: 14",
+      "Strength: -",
+      "Stealth: Disadvantage",
+      "Weight: 40 lb"
+    ]
+  },
+  "Light Armor": {
+    "content": [
+      "cost: 5 gp",
+      "AC: 11 + Dex modifier",
+      "Strength: -",
+      "Stealth: Disadvantage",
+      "Weight: 8 lb"
+    ]
+  },
+  "Shield": {
+    "content": [
+      "cost: 10 gp",
+      "AC:+2",	
+      "Strength: -",
+      "Stealth: -",
+      "Weight: 6 lb",
+    ]
+  },
+  "Club": {
+    "content": [
+       "cost: 1 sp",
+       "Damage: 1d4 bludgeoning",
+       "Weight: 2 lb",
+       "Properties: Light"
+      ]
+    },
+  "Dagger": {
+    "content": [
+       "cost: 2 gp",
+       "Damage: 1d4 piercing",
+       "Weight: 1 lb",
+       "Properties: Finesse, light, thrown (range 20/60)"
+      ]
+    },
+   "Greatclub": {
+    "content": [
+       "cost: 2 sp",
+       "Damage: 1d8 bludgeoning",
+       "Weight: 10 lb",
+       "Properties: Two-handed"
+      ]
+    },
+    "Handaxe": {
+    "content": [
+       "cost: 5 gp",
+       "Damage: 1d6 slashing",
+       "Weight: 2 lb",
+       "Properties: Light, thrown (range 20/60)"
+      ]
+    },
+    "Javelin": {
+    "content": [
+       "cost: 5 sp",
+       "Damage: 1d6 piercing",
+       "Weight: 2 lb",
+       "Properties: Thrown (range 30/120)"
+      ]
+    },
+    "Light hammer": {
+    "content": [
+       "cost: 2 gp",
+       "Damage: 1d4 bludgeoning",
+       "Weight: 2 lb",
+       "Properties: Light, thrown (range 20/60)"
+      ]
+    },
+    "Mace": {
+    "content": [
+       "cost: 5 gp",
+       "Damage: 1d6 bludgeoning",
+       "Weight: 4 lb",
+       "Properties: —"
+      ]
+    },
+    "Quarterstaff": {
+    "content": [
+       "cost: 2 sp",
+       "Damage: 1d6 bludgeoning",
+       "Weight: 4 lb",
+       "Properties: Versatile (1d8)"
+      ]
+    },
+    "Sickle": {
+    "content": [
+       "cost: 1 gp",
+       "Damage: 1d4 slashing",
+       "Weight: 2 lb",
+       "Properties: Light"
+      ]
+    },
+    "Spear": {
+    "content": [
+       "cost: 1 gp",
+       "Damage: 1d6 piercing",
+       "Weight: 3 lb",
+       "Properties: Thrown (range 20/60), versatile (1d8)"
+      ]
+    },
+   "Crossbow, light": {
+    "content": [
+       "cost: 25 gp",
+       "Damage: 1d8 piercing",
+       "Weight: 5 lb",
+       "Properties: Ammunition (range 80/320), loading, two-handed"
+      ]
+    },
+  "Dart": {
+    "content": [
+       "cost: 5 cp",
+       "Damage: 1d4 piercing",
+       "Weight: 1/4 lb",
+       "Properties: Finesse, thrown (range 20/60)"
+      ]
+    },
+   "Shortbow": {
+    "content": [
+       "cost: 25 gp",
+       "Damage: 1d6 piercing",
+       "Weight: 2 lb",
+       "Properties: Ammunition (range 80/320), two-handed"
+      ]
+    },
+    "Sling": {
+    "content": [
+       "cost: 1 sp",
+       "Damage: 1d4 bludgeoning",
+       "Weight: —",
+       "Properties: Ammunition (range 30/120)"
+      ]
+    },
+    "Battleaxe": {
+    "content": [
+       "cost: 10 gp",
+       "Damage: 1d8 slashing",
+       "Weight: 4 lb",
+       "Properties: "Versatile (1d10)"
+      ]
+    },
+    "Glaive": {
+    "content": [
+       "cost: 20 gp",
+       "Damage: 1d10 slashing",
+       "Weight: 6 lb",
+       "Properties: Heavy, reach, two-handed"
+      ]
+    },
+    "Greataxe": {
+    "content": [
+       "cost: 30 gp",
+       "Damage: 1d12 slashing",
+       "Weight: 7 lb",
+       "Properties:Heavy, two-handed"
+      ]
+    },
+    "Greatsword": {
+    "content": [
+       "cost: 50 gp",
+       "Damage: 2d6 slashing",
+       "Weight: 6 lb",
+       "Properties: Heavy, two-handed"
+      ]
+    },
+    "Halberd": {
+    "content": [
+       "cost: 20 gp",
+       "Damage: 1d10 slashing",
+       "Weight: 6 lb",
+       "Properties: Heavy, reach, two-handed"
+      ]
+    },
+    "Lance": {
+    "content": [
+       "cost: 10 gp",
+       "Damage: 1d12 piercing",
+       "Weight: 10 lb",
+       "Properties: Reach, special"
+      ]
+    },
+   "Longsword": {
+    "content": [
+       "cost: 15 gp",
+       "Damage: 1d8 slashing",
+       "Weight: 4 lb",
+       "Properties: Versatile (1d10)"
+      ]
+    },
+  "Maul": {
+    "content": [
+       "cost: 10 gp",
+       "Damage: 2d6 bludgeoning",
+       "Weight: 18 lb",
+       "Properties: FHeavy, two-handed"
+      ]
+    },
+   "Morningstar": {
+    "content": [
+       "cost: 15 gp",
+       "Damage: 1d8 piercing",
+       "Weight: 2 lb",
+       "Properties: —"
+      ]
+    },
+    "Pike": {
+    "content": [
+       "cost: 5 gp",
+       "Damage: 1d10 piercing",
+       "Weight: 3 lb",
+       "Properties: Heavy, reach, two-handed"
+      ]
+    },
+    "Rapier": {
+    "content": [
+       "cost: 25 gp",
+       "Damage: 1d8 piercing",
+       "Weight: 3 lb",
+       "Properties: "Finesse"
+      ]
+    },
+    "Scimitar": {
+    "content": [
+       "cost: 25 gp",
+       "Damage: 1d6 slashing",
+       "Weight: 3 lb",
+       "Properties: Finesse, light"
+      ]
+    },
+    "Trident": {
+    "content": [
+       "cost: 5 gp",
+       "Damage: 1d6 piercing",
+       "Weight: 4 lb",
+       "Properties: Thrown (range 20/60), versatile (1d8)"
+      ]
+    },
+    "War pick": {
+    "content": [
+       "cost: 5 gp",
+       "Damage: 1d8 piercing",
+       "Weight: 2 lb",
+       "Properties: —"
+      ]
+    },
+    "Warhammer": {
+    "content": [
+       "cost: 15 gp",
+       "Damage: 1d8 bludgeoning",
+       "Weight: 2 lb"
+       "Properties: Versatile (1d10)"
+      ]
+    },
+    "Whip": {
+    "content": [
+       "cost: 2 gp",
+       "Damage: 1d4 slashing",
+       "Weight: 3 lb",
+       "Properties:Finesse, reach",
+    ]
   }
 }
