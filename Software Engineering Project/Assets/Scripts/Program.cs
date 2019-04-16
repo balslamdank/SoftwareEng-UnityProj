@@ -8,9 +8,9 @@ namespace dice_roller
 {
     public class roller
     {
-        public int Work(string test)
+        public int Work(string inputString1)
         {
-            string inputString = test + " ";
+            string inputString = inputString1 + " ";
             string newString = "";
             int newRollTotal = 0;
 
@@ -22,7 +22,6 @@ namespace dice_roller
             Console.WriteLine(newRollTotal);
 
             return newRollTotal;
-            
         }
 
         //passing in the value that is read from the calculator pad dice roller input
@@ -34,32 +33,32 @@ namespace dice_roller
             string valueOfDice = "";
             int diceRolls = 0;
 
-
             for (int i = 0; i < userEnteredString.Length - 1; i++)
             {
-
                 if (Char.IsDigit(userEnteredArray.ElementAt(i)) &&
-                    userEnteredArray.ElementAt(i + 1).Equals('d'))
+                    (userEnteredArray.ElementAt(i + 1).Equals('d') || Char.IsDigit(userEnteredArray.ElementAt(i+1))))
                 {
                     //record the number in front of the d portion
-
                     numberOfDiceRolls += userEnteredArray.ElementAt(i).ToString();
+                    if (Char.IsDigit(userEnteredArray.ElementAt(i + 1)))
+                    {
+                        numberOfDiceRolls += userEnteredArray.ElementAt(i + 1).ToString();
+                        i += 1;
+                    }
                     Int32.TryParse(numberOfDiceRolls, out diceRolls);
                     numberOfDiceRolls = "";
                 }
                 else if (Char.IsDigit(userEnteredArray.ElementAt(i)) &&
-                    Char.IsDigit(userEnteredArray.ElementAt(i + 1)) &&
+                    Char.IsDigit(userEnteredArray.ElementAt(i + 1)) && 
                     userEnteredArray.ElementAt(i - 1).Equals('d'))
                 {
                     numberOfDiceRolls += userEnteredArray.ElementAt(i).ToString();
-
                     numberOfDiceRolls = "";
                 }
                 else if (Char.IsDigit(userEnteredArray.ElementAt(i)) &&
                     Char.IsDigit(userEnteredArray.ElementAt(i + 1)))
                 {
                     numberOfDiceRolls += userEnteredArray.ElementAt(i).ToString();
-                    //numberOfDiceRolls = "";
                 }
                 else
                 {
@@ -67,9 +66,13 @@ namespace dice_roller
                     {
                         case 'd':
                             int k = userEnteredString.Length - 1 - i;
-                            if (Char.IsNumber(userEnteredString[i + 2]))
+                            if (Char.IsNumber(userEnteredString[i+2]))
                             {
                                 valueOfDice = userEnteredString.Substring(i + 1, 2).ToString();
+                            }
+                            else if (Char.IsNumber(userEnteredString[i + 3]))
+                            {
+                                valueOfDice = userEnteredString.Substring(i + 1, 3).ToString();
                             }
                             else
                             {
@@ -95,8 +98,6 @@ namespace dice_roller
                         default:
                             if (userEnteredArray.ElementAt(i - 1).Equals('d'))
                                 break;
-                            //else
-                            //newParsedString += userEnteredArray.ElementAt(i);
                             break;
                     }
                 }
@@ -109,15 +110,7 @@ namespace dice_roller
             string numberOfDiceRolls = "";
             for (int i = 0; i < userEnteredArray.Length; i++)
             {
-                //if (Char.IsDigit(userEnteredArray.ElementAt(i)) &&
-                //    Char.IsDigit(userEnteredArray.ElementAt(i + 1)))
-                //{
                 numberOfDiceRolls += userEnteredArray.ElementAt(i).ToString();
-                //}
-                //else
-                //{
-                //numberOfDiceRolls[i] = userEnteredArray.ElementAt(i);
-                //}
             }
 
             return numberOfDiceRolls;
@@ -147,7 +140,7 @@ namespace dice_roller
                         k = i - j;
                         valueOfDice = newParsedString.Substring(j, k + 1).ToString();
                         Int32.TryParse(valueOfDice, out diceValue);
-                        randomlyGeneratedDiceRoll = rand.Next(1, diceValue);
+                        randomlyGeneratedDiceRoll = rand.Next(1, diceValue + 1);
                         diceRollTotal += randomlyGeneratedDiceRoll;
                         break;
                     case '+':
