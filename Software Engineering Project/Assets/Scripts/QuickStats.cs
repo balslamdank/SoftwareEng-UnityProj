@@ -25,6 +25,7 @@ public class QuickStats : MonoBehaviour
 		intValue.text = charJson["Intelligence"];
 		wisValue.text = charJson["Wisdom"];
 		charValue.text = charJson["Charisma"];
+       
 
 	}
 

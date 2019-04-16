@@ -12,6 +12,7 @@ public class DisplayDetails : MonoBehaviour
 {
     public string selectedItem = "";
     public Button butt1, butt2, butt3, butt4;
+    public string fileSearchName;
     public Text contentDetails;
     public TextMeshProUGUI keyValue;
     
@@ -29,7 +30,7 @@ public class DisplayDetails : MonoBehaviour
     void whoKnows(string panelContent)
     {
         string test2 = "";
-        string path = Application.dataPath + "/json" + "/" + "magic_items.json";
+        string path = Application.dataPath + "/json" + "/" + fileSearchName + ".json";
         string jsonSearchString = File.ReadAllText(path);
         JSONObject searchJSON = (JSONObject)JSON.Parse(jsonSearchString);
         string test = searchJSON.ToString();
