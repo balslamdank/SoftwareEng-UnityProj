@@ -28,7 +28,7 @@ public class QuickStats : MonoBehaviour
 
 	}
 
-	void Start()
+	void Update()
     {
 		
 
