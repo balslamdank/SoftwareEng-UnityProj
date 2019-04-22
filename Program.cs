@@ -10,7 +10,7 @@ namespace dice_roller
     {
         static void Main(string[] args)
         {
-            string inputString = "10d20+2d10" + " ";
+            string inputString = "3d5+30d20+2d3" + " ";
             string newString = "";
             int newRollTotal = 0;
 
@@ -68,9 +68,12 @@ namespace dice_roller
                             {
                                 valueOfDice = userEnteredString.Substring(i + 1, 2).ToString();
                             }
-                            else if (Char.IsNumber(userEnteredString[i + 3]))
+                            else if (userEnteredArray.Length > (i + 3))
                             {
-                                valueOfDice = userEnteredString.Substring(i + 1, 3).ToString();
+                                if (Char.IsNumber(userEnteredString[i + 3]))
+                                {
+                                    valueOfDice = userEnteredString.Substring(i + 1, 3).ToString();
+                                }
                             }
                             else
                             {
