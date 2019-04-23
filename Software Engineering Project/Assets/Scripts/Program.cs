@@ -8,8 +8,8 @@ namespace dice_roller
 {
     public class roller
     {
-        public int Work(string inputString1)
-        {
+       public int Work(string inputString1)
+        {		        
             string inputString = inputString1 + " ";
             string newString = "";
             int newRollTotal = 0;
@@ -20,8 +20,7 @@ namespace dice_roller
             Console.WriteLine(newString);
             newRollTotal = roll.FindDiceRollTotal(newString);
             Console.WriteLine(newRollTotal);
-
-            return newRollTotal;
+	    return newRollTotal;
         }
 
         //passing in the value that is read from the calculator pad dice roller input
@@ -70,9 +69,12 @@ namespace dice_roller
                             {
                                 valueOfDice = userEnteredString.Substring(i + 1, 2).ToString();
                             }
-                            else if (Char.IsNumber(userEnteredString[i + 3]))
+                            else if (userEnteredArray.Length > (i + 3))
                             {
-                                valueOfDice = userEnteredString.Substring(i + 1, 3).ToString();
+                                if (Char.IsNumber(userEnteredString[i + 3]))
+                                {
+                                    valueOfDice = userEnteredString.Substring(i + 1, 3).ToString();
+                                }
                             }
                             else
                             {
@@ -140,7 +142,7 @@ namespace dice_roller
                         k = i - j;
                         valueOfDice = newParsedString.Substring(j, k + 1).ToString();
                         Int32.TryParse(valueOfDice, out diceValue);
-                        randomlyGeneratedDiceRoll = rand.Next(1, diceValue + 1);
+                        randomlyGeneratedDiceRoll = rand.Next(1, diceValue);
                         diceRollTotal += randomlyGeneratedDiceRoll;
                         break;
                     case '+':
