@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 5c836ec1e67ccf54b90d40d7360e06b5
   - enabled: 1
-    path: Assets/Scenes/DiceRoller.unity
-    guid: 5e94b80f1a609cb4ead74307ef5ef987
+    path: Assets/Scenes/JohnCalc.unity
+    guid: 4ee86e7453ef8bb41baa9f674ce2d46b
   - enabled: 1
     path: Assets/Scenes/CharacterSheet.unity
     guid: a2614196f27810e46b366cadce33297a

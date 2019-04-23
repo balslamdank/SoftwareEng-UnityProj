@@ -1521,7 +1521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da873b67619d304fb38e8ec0a2c4016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  str: DiceRoller
+  str: JohnCalc
 --- !u!1 &2700974001174862230
 GameObject:
   m_ObjectHideFlags: 0
