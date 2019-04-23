@@ -31,7 +31,8 @@ public class Searching : MonoBehaviour
         isRunning = true;
         string search = this.gameObject.GetComponent<InputField>().text;
 
-        string path = Application.dataPath + "/json" + "/" + fileSearchName + ".json";
+        //string path = Application.dataPath + "/json" + "/" + fileSearchName + ".json";
+        string path = Application.dataPath + "/" + fileSearchName + ".json";
         string jsonSearchString = File.ReadAllText(path);
         JSONObject searchJSON = (JSONObject)JSON.Parse(jsonSearchString);
         string test = searchJSON.ToString();

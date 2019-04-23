@@ -30,7 +30,7 @@ public class DisplayDetails : MonoBehaviour
     void whoKnows(string panelContent)
     {
         string test2 = "";
-        string path = Application.dataPath + "/json" + "/" + fileSearchName + ".json";
+        string path = Application.dataPath + "/" + fileSearchName + ".json";
         string jsonSearchString = File.ReadAllText(path);
         JSONObject searchJSON = (JSONObject)JSON.Parse(jsonSearchString);
         string test = searchJSON.ToString();
