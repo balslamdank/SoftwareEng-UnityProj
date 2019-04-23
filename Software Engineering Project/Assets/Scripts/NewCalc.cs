@@ -47,7 +47,7 @@ public class NewCalc : MonoBehaviour
 
             for(int i = 0; i < temp1; i++)
             {
-                total += Random.Range(1, temp2);
+                total += Random.Range(1, temp2+1);
             }
 
             op1 = total.ToString();
@@ -63,7 +63,7 @@ public class NewCalc : MonoBehaviour
 
             for (int i = 0; i < temp1; i++)
             {
-                total += Random.Range(1, temp2);
+                total += Random.Range(1, temp2+1);
             }
 
             op2 = total.ToString();
